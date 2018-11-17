@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
    <head>
-	<title>Login V3</title>
+	<title>Team PD</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -37,8 +37,9 @@
 					
 
 					<span class="login100-form-title p-b-34 p-t-27">
-						Hi Team VASU
+						Hi Team Prodevans
 					</span>
+	       				<img class="white_logo desktop_logo" src="http://www.prodevans.com/wp-content/uploads/2017/03/finalLogo.png" alt="Prodevans" title="Prodevans">
 <!--
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
 						<input id="uname" class="input100" type="text" name="uname" placeholder="Username" required>
