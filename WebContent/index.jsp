@@ -37,9 +37,9 @@
 					
 
 					<span class="login100-form-title p-b-34 p-t-27">
-						Log in
+						Hi Team VASU
 					</span>
-
+<!--
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
 						<input id="uname" class="input100" type="text" name="uname" placeholder="Username" required>
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
@@ -65,7 +65,7 @@
 							 <a href="reg.jsp">SIGN UP</a>
 						</button>
 					</div>
-					
+-->					
 					
 				</form>
 				</div>
