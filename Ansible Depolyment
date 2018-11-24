@@ -1,0 +1,22 @@
+---
+- name: To deploy Java project on server.
+ hosts: all
+ vars_files:
+ - credential.yml
+ tasks:
+ - name: Stop tomcat server
+   command: ./shutdown.sh
+   args:
+     chdir: /opt/tomcat/bin
+ - name: To copy the file from artifactory.
+   get_url:
+     url: http://40.117.214.153:8081/artifactory/libs-snapshot-local/Service_Portal/Service_Portal/0.0.1-SNAPSHOT/Service_Portal-0.0.1-SNAPSHOT.war
+     url_username: admin
+     url_password: password
+     dest: /opt/tomcat/webapps
+ - name: rename war file
+   shell: mv /opt/tomcat/webapps/Service_Portal-0.0.1-SNAPSHOT.war /opt/tomcat/webapps/Service_Portal.war
+ - name: start tomcat server
+   command: ./startup.sh
+   args:
+     chdir: /opt/tomcat/bin
